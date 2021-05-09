@@ -1,16 +1,40 @@
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Javascript project</title>
+     <link rel="stylesheet" type="text/css" href="javascript project.css">   
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+    <div id="container">
+        <h1>SIMPLE INTREST calculator</h1>
+        <div id="calculator">
+        <form>
+            <p>ENTER YOUR AMOUNT</p>
+            <p>
+                RS. <input id="billamt" type="text" placeholder="Enter here">
+            </p>
+            <p>ENTER INTREST RATE</p>
+            <p>
+             <input id="intrate" type="text" placeholder="Enter here">
+            </p>
+            <p>Number of years</p>
+            <p>
+                <select id="serviceQual">
+                <option disabled selected value="0">-- chose an option --</option>
+                    <option value="1">1 &#45;Year</option>
+                    <option value="2">2 &#45;Year</option>
+                    <option value="5">5 &#45;Year</option>
+                    <option value="10">10 &#45;Year</option>
+                </select>
+            </p>
+            </form>
+        
+            <button type="button" id="calculate">Calculate!</button>
+        </div>
+        <div id="totalTip">
+        <sup>Rs.</sup><span id="tip">0.00</span>
+            <small id="each"></small>
+        </div>
+        </div>
+        <script type="text/javascript" src="javascript project.js"></script>
     </body>
 </html>
