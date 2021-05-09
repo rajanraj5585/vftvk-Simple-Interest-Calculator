@@ -5,9 +5,14 @@
      var intrate = document.getElementById("intrate").value;
     
     
-    if(billamt==="" || serviceQual==0 || billamt==0)
+    if(billamt==="" || serviceQual==0 ||)
         {
             alert("please enter values");
+            reture;
+        }
+    if(billamt==0 || billamt<0 )
+        {
+            alert("please enter positive no.");
             reture;
         }
     
